@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- put the bootstrap link above all other stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- type in google "bootstrap icons cdn" to find the bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="mybootstrap.css" /> -->
+    <title>Petes Bootstrap</title>
+  </head>
+  <style>
+    body::before {
+      display: block;
+      content: "";
+      height: 60px;
+    }
+
+    @media (min-width: 768px) {
+      .newsletter-input {
+        width: 50%;
+      }
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <!-- navbar-expand-lg is the breakpoint for responsiveness
+     it is greater than 992px if navbar-expand-sm it is greater than 567px
+     and if navbar-expand-md then greater than 768px -->
+    <!-- using navbar(in bootstrap components) -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <!-- ms means margin start 3 -->
+      <!-- using container(in bootstrap components) -->
+      <div class="container">
+        <a href="#" class="navbar-brand">Space Fanatics Academy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <!-- class="navbar-toggler-icon" below  is the hamburger icon in the nav but for the navbar-toggler 
+         to work you will need javascript link from bootstrap.Put the link at the very bottom of the dom -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- .collapse.navbar-collapse for grouping and hiding navbar. using navbar(in bootstrap components)
+        contents by a parent breakpoint. -->
+        <!-- id="nav-menu is for the data-bs-target="#navmenu" above -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- ms-auto means margin start auto and
+           me-3 means margin end 3 -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#learn">What you'll learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#questions">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructors">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-3 text-center text-sm-start"
+      id="showcase"
+    >
+      <!-- using container(in bootstrap layout) -->
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-center">
+          <div>
+            <h1>Become a <span class="text-warning">Space Cadet</span></h1>
+            <p class="lead my-4">
+              If you are passionate about space and would love to learn all
+              about the universe and space travel then Space Fanatics academy is
+              the go to place for you.
+            </p>
+            <!-- Button trigger for modal -->
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start the enrollment
+            </button>
+          </div>
+          <!-- using images(in bootstrap content) -->
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="images/space-heading.jpg"
+            alt="A group of arcade machines"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter using input groups(in bootstrap components) -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+          <!-- css for newsletter-input class above in style tags-->
+          <!-- using input groups(in bootstrap components) -->
+          <div class="input-group newsletter-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn btn-dark btn-lg" type="button">Button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- boxes using grid(in bootstrap layout) and look at the card(in bootstrap components-->
+    <section class="p-5 div container">
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">Virtual</h3>
+              <p class="card-text">
+                With a wide range of tutorial videos covering all subjects &
+                live lectures available online, connect with students around the
+                world. .
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-person-square"></i>
+              </div>
+              <h3 class="card-title mb-3">Hybrid</h3>
+              <p class="card-text">
+                Aswell as online services we have classroom based lectures so
+                you can truly engage with our lecturers and other students.
+              </p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="card-title mb-3">In Person</h3>
+              <p class="card-text">
+                If you want a purely class based experience we can over that to.
+                We can offer day and night time
+                courses.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- learn section -->
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              class="img-fluid"
+              src="images/history.jpg"
+              alt="A group of arcade machines"
+            />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn The History of Space Exploration</h2>
+            <p class="lead">
+              Space exploration has evolved from ancient astronomical
+              observations to human and robotic missions across the solar
+              system, driven by curiosity, technology, and international
+              competition.
+            </p>
+            <p>
+              Human fascination with the cosmos dates back thousands of years.
+              Ancient civilizations in Mesopotamia, China, Greece, and the
+              Americas developed sophisticated methods to track celestial
+              bodies, create star charts, predict eclipses, and align monuments
+              with astronomical events. The invention of the telescope in the
+              early 17th century, notably used by Galileo Galilei, revealed
+              Jupiter's moons and the phases of Venus, providing evidence for
+              the heliocentric model and laying the groundwork for modern
+              astronomy.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals Of The Solar System And Much More..</h2>
+            <p class="lead">
+              The solar system consists of the Sun and all celestial bodies that
+              orbit it, including eight planets, their moons, dwarf planets,
+              asteroids, and comets, all bound by the Sun's gravity.
+            </p>
+            <p>
+              Understanding the solar system is crucial for comprehending the
+              origins of Earth and the conditions that support life. It also
+              provides insights into the processes that govern planetary
+              formation and evolution, which can be applied to the study of
+              exoplanets and other planetary systems beyond our own.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img
+              class="img-fluid"
+              src="images/planets.jpg"
+              alt="A group of arcade machines"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- questions accordion(in bootstrap components) section -->
+    <!-- the data-bs-target and div have to have matching id's see below -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Where exactly are you located?
+              </button>
+            </h2>
+            <!-- the data-bs-target and have to have matching id's -->
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                We are located in the center of Leicester with our own parking
+                facilities.
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                How much does it cost to attend?
+              </button>
+            </h2>
+            <!-- the data-bs-target and div have to have matching id's -->
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                There are various courses and affordable price plans available,
+                contact are enrollment team for further details.
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                What do I need to know
+              </button>
+            </h2>
+            <!-- the data-bs-target and data-bs-parent have to have matching id's -->
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                There is no prior knowledge required just an enthusiasm for all
+                thing space.
+              </div>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How do I sign up?
+              </button>
+            </h2>
+            <!-- the data-bs-target and data-bs-parent have to have matching id's -->
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Click on Start Enrollment at the top of the page.
+              </div>
+            </div>
+          </div>
+          <!-- item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                what certifications will I gain?
+              </button>
+            </h2>
+            <!-- the data-bs-target and data-bs-parent have to have matching id's -->
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                You will gain badges and certificates in each field that are
+                recogonised within the industry.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- instructor section using the card (in bootstrap components)-->
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+          Our Instructors are passionate about space and have 5 years + of deep
+          knowledge in their chosen field.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt="A mans face"
+                />
+                <h3 class="card-title mb-3">Steve Walsh</h3>
+                <p class="card-text">
+                  If you want to know all about planets Steve is your guy.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/3.jpg"
+                  class="rounded-circle mb-3"
+                  alt="A mans face"
+                />
+                <h3 class="card-title mb-3">Gary Mills</h3>
+                <p class="card-text">
+                  Go on a journey with Gary with his knowledge of Space travel.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/2.jpg"
+                  class="rounded-circle mb-3"
+                  alt="A mans face"
+                />
+                <h3 class="card-title mb-3">Pamela Anderson</h3>
+                <p class="card-text">
+                  Take a deep dive with Pamela into plants and origins.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/8.jpg"
+                  class="rounded-circle mb-3"
+                  alt="A mans face"
+                />
+                <h3 class="card-title mb-3">Margot Robbie</h3>
+                <p class="card-text">
+                  Margot will talk you through our solar system.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact and map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <!-- using list group (in bootstrap components) -->
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> 1888 Filbert Way,
+                Leicester, Le9 4fh
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone:</span> 0116 882016
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Phone:</span> 0116 091188
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span>
+                enroll@spacefanaticsacademy.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span>
+                studentkeentolearn@mail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2422.192454510943!2d-1.1447644234511505!3d52.62036617208761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDM3JzExLjQiTiAxwrAwOCczMi4yIlc!5e0!3m2!1sen!2suk!4v1778431839297!5m2!1sen!2suk"
+                width="100%"
+                height="300"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">copyright&copy;2026 Space Fanatics Academy</p>
+        <nav>
+          <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+          <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+          <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+          <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+          <a href="#showcase" class="bottom-0 end-0 p-5 position-absolute">
+            <i class="bi bi-arrow-up-circle h1"></i
+          ></a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Modal(in bootstrap components)the modal can go anywhere on the dom but put at the bottom -->
+
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enroll"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enroll">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">
+              Fill out the form and we will get back to you within 24 hours
+            </p>
+            <!-- using form contol(in bootstrap forms) -->
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label"
+                  >Last Name:
+                </label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email: </label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
