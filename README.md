@@ -45,8 +45,7 @@ What problem does this application solve?
 
 - Scroll to different sections on the page with a click of a button
 - Embedded a map from Google maps
-- Implemented a contact form in the Modal
-- Embedded a map form Google maps
+- Implemented a contact form using a Modal
 - Responsive on all screen sizes
 
 ---
