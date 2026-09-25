@@ -76,10 +76,10 @@ Folder Structure Example:
 
 client/
  |
-|   index.html
-|   mybootstrap.css
-|     
-\---images
+ |   index.html
+ |   mybootstrap.css
+ |     
+ \---images
       
 
 ```
