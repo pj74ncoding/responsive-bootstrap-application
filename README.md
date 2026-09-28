@@ -1,7 +1,5 @@
 # responsive-bootstrap-application
 
-
-
 Created a responsive homepage using Bootstrap
 
 Live Demo: https://responsive-bootstrap-application.vercel.app/
@@ -28,18 +26,13 @@ Live Demo: https://responsive-bootstrap-application.vercel.app/
 
 ### Motivation
 
-Why did you build this project?
+Built the application to learn about the Bootstrap framework
 
-### Objective
-
-What problem does this application solve?
 
 ### Learning Outcomes
 
 - Learnt How to use Bootstrap
 - Learnt how to implement a Card, List Groups and a Modal
-- 
-
 
 ## Project Features
 
@@ -81,7 +74,6 @@ client/
  |     
  \---images
       
-
 ```
 
 ---
@@ -103,8 +95,6 @@ Frontend:
 
 ```bash
 cd responsive-bootstrap-application
-
-
 npm install
 ```
 
