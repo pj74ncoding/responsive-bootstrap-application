@@ -66,7 +66,6 @@ Client (Frontend)
 Folder Structure Example:
 
 ```
-
 2.
 
 client/
@@ -77,7 +76,6 @@ client/
  \---images
       
 ```
-
 ---
 
 ## Installation
@@ -88,7 +86,6 @@ client/
 git clone https://github.com/pj74ncoding/responsive-bootstrap-application.git
 cd responsive-bootstrap-application
 
-
 ```
 
 ### Install Dependencies
@@ -96,11 +93,10 @@ cd responsive-bootstrap-application
 Frontend:
 
 ```bash
-cd responsive-bootstrap-application
 npm install
 ```
 
-### Run Development Servers
+### Run Application
 
 Frontend:
 
@@ -108,7 +104,7 @@ Frontend:
 npm start
 ```
 
-## Screenshots
+## Preview
 
 ```
 \---images
@@ -117,14 +113,6 @@ npm start
         planets.jpg
         space-heading.jpg
 ```
-
-Add inside README:
-
-```markdown
-![Home Page](assets/home.png)
-![Dashboard](assets/dashboard.png)
-```
-
 ---
 
 ## Future Improvements
